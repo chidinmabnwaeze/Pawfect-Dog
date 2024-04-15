@@ -76,6 +76,12 @@ body{
     transition: 1s;
     color: white;
  }
+
+.nav-menu-toggle , .login-section-togglez{
+   display: flex;
+   flex-direction: column;
+}
+
  .section1{
     display: grid;
     grid-template-columns: 2fr 1fr;
