@@ -75,6 +75,11 @@ body{
     transform: scaleX();
     transition: 1s;
     color: white;
+    cursor: pointer;
+ }
+
+ .nav-toggle{
+   display: none;
  }
 
 .nav-menu-toggle , .login-section-togglez{
@@ -87,6 +92,7 @@ body{
     grid-template-columns: 2fr 1fr;
     margin-top: 50px;
     margin-bottom: 50px;
+    margin-left: 20px;
     
  }
  .left-side{
@@ -191,20 +197,30 @@ body{
 .ourServices{
    margin-top: 30px;
    margin-bottom: 30px;
+   margin: 30px;
 }
 
 .services{
-   display: grid;
+   /* display: grid;
    grid-template-columns: repeat(3,minmax(0,1fr));
+   padding: 20px; */
+display: flex;
+align-items: center;
+
+}
+.service-card{
+padding: 10px;
 }
 
 .service-card img{
    width: 200px;
    height: 200px;
    border-radius: 50%;
+   margin: 0 auto;
 }
-.service-card .img{
-border-radius: 50%;
+.service-card .image{
+display: flex;
+align-items: center;
 }
 .service-card a{
    text-decoration: none;
@@ -216,13 +232,15 @@ footer{
    justify-content: center;
    align-items: center;
    background-color: aliceblue;
-   margin:50px 0 0;
+   /* margin:50px 0 0; */
    overflow: hidden;
-
+   
 }
+
 .footer-link{
    text-decoration: none;
    color: black;
+  
 }
 .footer-item{
    list-style: none;
@@ -238,6 +256,13 @@ footer{
    .nav-menu, .login-section{
       display: none;
    }
+   
+.nav-toggle{
+   display:flex;
+   justify-content: end;
+   color: rgb(253, 132, 88, 0.959);
+}
+
 .section1{
    display: flex;
    flex-direction: column-reverse;
