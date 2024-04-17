@@ -46,12 +46,12 @@
             </div>
 
              <div class="nav-toggle">
-                <i class='bx bx-menu'></i>
+                <i onclick="showNavBar()" class='bx bx-menu' class="js-show"></i>
             </div> 
         </nav>
     </header>
 
-    <!-- toggle header
+    <!--toggle header -
     <header class="toggle">
         <nav class="logo-container">
             <div class="logo-div">
@@ -67,7 +67,12 @@
             <a href="https://iconscout.com/icons/hamburger-menu" class="text-underline font-size-sm" target="_blank">hamburger menu</a> by <a href="https://iconscout.com/contributors/yogswpy" 
             class="text-underline font-size-sm" target="_blank">Widyatmoko P.Y</a>
         </div>  -->
-            <!-- <div class="nav-menu-toggle"> 
+           <div class="nav-menu-toggle"> 
+            
+            <div class="nav-toggle-close">
+                <i onclick="hideNavBar()" class='bx bx-x'  class="js-close" style="height: 34px;"></i>
+            </div>
+
                 <ul class="nav-list-toggle">
                     <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
@@ -75,18 +80,16 @@
                     <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Contact us</a></li>
                 </ul>
+
+                <div class="login-section-toggle">
+                    <button class="login">Login</button>
+                    <button class="signup">Sign up</button>
+                </div>
+
             </div>
 
-            <div class="login-section-toggle">
-                <button class="login">Login</button>
-                <button class="signup">Sign up</button>
-            </div>
-
-            <div class="nav-toggle">
-                <i class='bx bx-x' style="height: 34px;"></i>
-            </div>
         </nav>
-    </header> -->
+    </header> 
 
 
     <section class="section1">
@@ -282,6 +285,21 @@
         </form>
 
     </footer>
+
+    <script>
+function showNavBar(){
+    const navbar = document.querySelector(".js-show")
+
+    navbar.style.display ="flex";
+}
+
+function hideNavBar(){
+    const navBar = document.querySelector(".js-close")
+
+    document.getElementById("js-close").style.display="none";
+}
+
+    </script>
 </body>
 
 </html>

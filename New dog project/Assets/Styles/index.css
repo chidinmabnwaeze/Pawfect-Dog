@@ -62,13 +62,13 @@ body{
  .login,.signup{
     border-radius: 15px;
     background-color: rgba(253, 132, 88, 0.959);
-    padding: -10px;
+    padding: 10px;
     color: black;
     margin-left: 20px;
-    height:40px;
-    width: 70px;
-    border-color: rgb(124, 124, 124);
-    border-style: solid;
+    height:100%;
+    width: 100px;
+    border: none;
+    
  }
  .login:hover,.signup:hover{
     background-color: orangered;
@@ -82,9 +82,48 @@ body{
    display: none;
  }
 
-.nav-menu-toggle , .login-section-togglez{
+.nav-menu-toggle {
+   display: none;
+   flex-direction: column;
+   z-index: 200;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   margin: 0;
+   background-color: white;
+   backdrop-filter: blur;
+}
+
+.nav-list-toggle{
    display: flex;
    flex-direction: column;
+   align-items: center;
+
+
+}
+.nav-list-toggle li{
+   margin:  6px;
+   
+}
+
+.login-section-toggle{
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+.login-section-toggle button{
+   margin: 6px;
+
+}
+.login{}
+
+.nav-toggle-close{
+   display: flex;
+   justify-content: end;
+   padding: 20px;
+   
 }
 
  .section1{
